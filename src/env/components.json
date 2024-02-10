@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Tour",
+        "path": "tour"
+    },
+    {
+        "title": "Recipe",
+        "path": "recipe"
+    },
+    {
+        "title": "Job",
+        "path": "job"
+    }
+]
