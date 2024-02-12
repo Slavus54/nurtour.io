@@ -262,6 +262,20 @@ input[type=text]:hover, textarea:hover {
 	padding: 1rem 2rem;
 }
 
+.text-card {
+	width: min(100%, 30rem);
+	height: 8rem;
+}
+
+.text {
+	font-size: 200;
+	font-weight: 1rem;
+	letter-spacing: 0.1rem;
+	word-spacing: 0.5rem;
+	text-transform: uppercase;
+	color: #040D21;
+}
+
 .card {
 	font-weight: 400;
 	width: min(100%, 14rem);

@@ -30,12 +30,12 @@ const components: AccountPageComponentType[] = [
         component: ProfileSecurity
     },
     {
-        title: 'Childs',
+        title: 'Child',
         icon: 'https://img.icons8.com/ios/50/teenager-male.png',
         component: ProfileChilds
     },
     {
-        title: 'Manuscripts',
+        title: 'Manuscript',
         icon: 'https://img.icons8.com/external-icongeek26-outline-icongeek26/64/external-Manuscript-content-edition-icongeek26-outline-icongeek26-2.png',
         component: ProfileManuscripts
     },

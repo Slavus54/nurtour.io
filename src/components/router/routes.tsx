@@ -10,6 +10,9 @@ import Recipe from '../pages/Recipe'
 import CreateJob from '../pages/CreateJob'
 import Jobs from '../pages/Jobs'
 import Job from '../pages/Job'
+import CreateHero from '../pages/CreateHero'
+import Heroes from '../pages/Heroes'
+import Hero from '../pages/Hero'
 import Profiles from '../pages/Profiles'
 import Profile from '../pages/Profile'
 
@@ -49,6 +52,13 @@ export const routes: RouteType[] = [
         access_value: 1,
         url: '/jobs',
         component: Jobs,
+        isVisible: true
+    },
+    {
+        title: 'Heroes',
+        access_value: 1,
+        url: '/heroes',
+        component: Heroes,
         isVisible: true
     },
     {
@@ -105,6 +115,20 @@ export const routes: RouteType[] = [
         access_value: 1,
         url: '/job/:id',
         component: Job,
+        isVisible: false
+    },
+    {
+        title: '',
+        access_value: 1,
+        url: '/create-hero/:id',
+        component: CreateHero,
+        isVisible: false
+    },
+    {
+        title: '',
+        access_value: 1,
+        url: '/hero/:id',
+        component: Hero,
         isVisible: false
     },
     {

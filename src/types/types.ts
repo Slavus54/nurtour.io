@@ -1,3 +1,4 @@
+// architecture 
 export interface AccountPageComponentProps {
     profile: any,
     context: any
@@ -15,6 +16,8 @@ export type CollectionPropsType = {
     }
 }
 
+// map library and Towns API
+
 export type Cords = {
     lat: number
     long: number
@@ -24,6 +27,8 @@ export type TownType = {
     title: string
     cords: Cords
 }
+
+// routing
 
 export type NavigatorWrapperPropsType = {
     children: any
@@ -39,6 +44,8 @@ export interface RouteType {
     component?: any
     isVisible?: boolean
 }
+
+// Context API
 
 export interface ContextStateType {
     account_id: string
@@ -104,6 +111,14 @@ export type AlertPropsType = (text: string, time?: number) => any
 export type ContextPropsType = {
     account_id: string
     username: string
+}
+
+// JSON 
+
+export interface FeatureItem {
+    title: string
+    category: string
+    text: string
 }
 
 // pieces

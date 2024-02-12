@@ -28,7 +28,7 @@ const PersonalProfileInfo = ({profile, context}: AccountPageComponentProps) => {
     return (
         <>
             <ImageLook src={image} className='photo_item' alt='account photo' />
-            <h3><b>{profile.username}</b></h3>
+            <h3 className='text'>{profile.username}</h3>
             <ImageLoader setImage={setImage} />
  
             <button onClick={onUpdate}>Update</button>  

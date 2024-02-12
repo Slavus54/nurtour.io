@@ -6,7 +6,6 @@ import Centum from 'centum.js'
 //@ts-ignore
 import shortid from 'shortid'
 import {Context} from '../../context/WebProvider'
-import MapPicker from '../UI/MapPicker'
 import FormPagination from '../UI/FormPagination'
 import {ModernAlert} from '../UI/ModernAlert'
 import {createRecipeM} from '../../graphql/pages/RecipePageQueries'

@@ -10,5 +10,9 @@
     {
         "title": "Job",
         "path": "job"
+    },
+    {
+        "title": "Hero",
+        "path": "hero"
     }
 ]

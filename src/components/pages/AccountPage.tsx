@@ -1,5 +1,5 @@
 import {useState, useMemo, useContext} from 'react'
-import {useMutation, gql} from '@apollo/client'
+import {useMutation} from '@apollo/client'
 import {Context} from '../../context/WebProvider'
 import Loading from '../UI/Loading'
 import FormPagination from '../UI/FormPagination'

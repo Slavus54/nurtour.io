@@ -1,7 +1,7 @@
 import React, {useState, useMemo, useContext} from 'react'
 import ReactMapGL, {Marker} from 'react-map-gl'
 import {useMutation} from '@apollo/client'
-import {VIEW_CONFIG, token} from '../../env/env'
+import {TG_ICON, VIEW_CONFIG, token} from '../../env/env'
 //@ts-ignore
 import Centum from 'centum.js'
 import ProfilePhoto from '../../assets/profile_photo.jpg'
@@ -61,6 +61,10 @@ const Profile: React.FC<CollectionPropsType> = ({params: {id}}) => {
     useMemo(() => {
         setView({...view, latitude: cords.lat, longitude: cords.long, zoom: 16})
     }, [cords])
+
+    const onViewProfile = () => {
+        centum.go(profile.telegram, 'telegram')
+    }
     
     const onLikeManuscript = () => {
         manageProfileManuscript({
@@ -72,10 +76,12 @@ const Profile: React.FC<CollectionPropsType> = ({params: {id}}) => {
 
     return (
         <>          
-            {profile !== null && context.account_id !== profile.account_id &&
+            {profile !== null && profile.account_id !== context.account_id &&
                 <>
                     <ImageLook src={image} className='photo_item' alt='account photo' />
                     <h1>{profile.username}</h1>
+                    
+                    <ImageLook onClick={onViewProfile} src={TG_ICON} min={2} max={2} className='icon' alt='telegram link' />
 
                     <ReactMapGL onClick={e => setCords(centum.mapboxCords(e))} {...view} onViewportChange={(e: any) => setView(e)} mapboxApiAccessToken={token}>
                         <Marker latitude={cords.lat} longitude={cords.long}>

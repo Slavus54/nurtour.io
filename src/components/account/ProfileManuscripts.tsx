@@ -53,7 +53,6 @@ const ProfileManuscripts = ({profile, context}: AccountPageComponentProps) => {
         <>
             {manuscript === null ? 
                     <>
-                        <h2>New Manuscript</h2>
                         <textarea value={title} onChange={e => setState({...state, title: e.target.value})} placeholder='Title of manuscript' />
 
                         <h4 className='pale'>Type</h4>

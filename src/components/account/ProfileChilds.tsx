@@ -52,7 +52,6 @@ const ProfileChilds = ({profile, context}: AccountPageComponentProps) => {
         <>
             {child === null ? 
                     <>
-                        <h2>New Child</h2>
                         <input value={fullname} onChange={e => setState({...state, fullname: e.target.value})} placeholder='Name of child' type='text' />
 
                         <h4 className='pale'>Status</h4>

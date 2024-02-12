@@ -1,6 +1,6 @@
 import React, {useState, useMemo, useEffect, useContext} from 'react'
 import {useMutation} from '@apollo/client'
-import {HEALTH_TYPES, RATING_DEFAULT_VALUE} from '../../env/env'
+import {HEALTH_TYPES, RATING_DEFAULT_VALUE, CALORIES_BASE} from '../../env/env'
 //@ts-ignore
 import Centum from 'centum.js'
 //@ts-ignore
@@ -18,6 +18,7 @@ import {CollectionPropsType} from '../../types/types'
 const Recipes: React.FC<CollectionPropsType> = ({params: {id}}) => {
     const {context} = useContext<any>(Context)
     const [image, setImage] = useState<string>('')
+    const [caloriesPercent, setCaloriesPercent] = useState<number>(0)
     const [steps, setSteps] = useState<any[]>([])
     const [step, setStep] = useState<any | null>(null)
     const [healthes, setHealthes] = useState<any[]>([])
@@ -90,6 +91,9 @@ const Recipes: React.FC<CollectionPropsType> = ({params: {id}}) => {
    
     useMemo(() => {
         if (recipe !== null) {
+            let result: number = centum.percent(recipe.calories, CALORIES_BASE, 1)
+
+            setCaloriesPercent(result)
             setState({...state, link: recipe.link, rating: recipe.rating})
         }
     }, [recipe])
@@ -138,7 +142,7 @@ const Recipes: React.FC<CollectionPropsType> = ({params: {id}}) => {
 
                     <div className='items small'>
                         <h4 className='pale'>Time: <b>{centum.time(recipe.time)}</b></h4>
-                        <h4 className='pale'>Calories: <b>{recipe.calories}</b></h4>
+                        <h4 className='pale'>Calories: <b>{recipe.calories}</b> (<b>{caloriesPercent}%</b>)</h4>
                     </div>
 
                     <h4 className='pale'>Source</h4>
