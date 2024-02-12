@@ -18,7 +18,7 @@ const Welcome: React.FC = () => {
 
             {feature === null ? 
                     <>
-                        <h2>Features</h2>
+                        <h1>Features</h1>
                         <div className='items half'>
                             {features.map(el => 
                                 <div onClick={() => setFeature(el)} className='text-card text'>

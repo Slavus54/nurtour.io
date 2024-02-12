@@ -61,7 +61,7 @@ export const VIEW_CONFIG = {
 } 
 
 export const CODE_ATTEMPTS = 3
-export const WEBSERVER_URL = 'http://localhost:4000'
+export const WEBSERVER_URL = 'https://nurtour-node-server.onrender.com'
 
 export const TIME_BORDERS = [420, 1260]
 export const SEARCH_PERCENT = 50
