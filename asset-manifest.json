@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Slavus54/nurtour.io/static/css/main.9daa6c79.css",
-    "main.js": "/Slavus54/nurtour.io/static/js/main.e4fae6b2.js",
-    "static/js/300.abcc0ca1.chunk.js": "/Slavus54/nurtour.io/static/js/300.abcc0ca1.chunk.js",
-    "static/js/952.66ee773a.chunk.js": "/Slavus54/nurtour.io/static/js/952.66ee773a.chunk.js",
-    "static/js/856.d02b9daa.chunk.js": "/Slavus54/nurtour.io/static/js/856.d02b9daa.chunk.js",
-    "static/js/592.599f76a2.chunk.js": "/Slavus54/nurtour.io/static/js/592.599f76a2.chunk.js",
-    "static/media/profile_photo.jpg": "/Slavus54/nurtour.io/static/media/profile_photo.4d5816424e21146aebb6.jpg",
-    "index.html": "/Slavus54/nurtour.io/index.html",
-    "main.9daa6c79.css.map": "/Slavus54/nurtour.io/static/css/main.9daa6c79.css.map",
-    "main.e4fae6b2.js.map": "/Slavus54/nurtour.io/static/js/main.e4fae6b2.js.map",
-    "300.abcc0ca1.chunk.js.map": "/Slavus54/nurtour.io/static/js/300.abcc0ca1.chunk.js.map",
-    "952.66ee773a.chunk.js.map": "/Slavus54/nurtour.io/static/js/952.66ee773a.chunk.js.map",
-    "856.d02b9daa.chunk.js.map": "/Slavus54/nurtour.io/static/js/856.d02b9daa.chunk.js.map",
-    "592.599f76a2.chunk.js.map": "/Slavus54/nurtour.io/static/js/592.599f76a2.chunk.js.map"
+    "main.css": "/nurtour.io/static/css/main.9daa6c79.css",
+    "main.js": "/nurtour.io/static/js/main.ff0e6156.js",
+    "static/js/300.abcc0ca1.chunk.js": "/nurtour.io/static/js/300.abcc0ca1.chunk.js",
+    "static/js/952.66ee773a.chunk.js": "/nurtour.io/static/js/952.66ee773a.chunk.js",
+    "static/js/856.d02b9daa.chunk.js": "/nurtour.io/static/js/856.d02b9daa.chunk.js",
+    "static/js/592.599f76a2.chunk.js": "/nurtour.io/static/js/592.599f76a2.chunk.js",
+    "static/media/profile_photo.jpg": "/nurtour.io/static/media/profile_photo.4d5816424e21146aebb6.jpg",
+    "index.html": "/nurtour.io/index.html",
+    "main.9daa6c79.css.map": "/nurtour.io/static/css/main.9daa6c79.css.map",
+    "main.ff0e6156.js.map": "/nurtour.io/static/js/main.ff0e6156.js.map",
+    "300.abcc0ca1.chunk.js.map": "/nurtour.io/static/js/300.abcc0ca1.chunk.js.map",
+    "952.66ee773a.chunk.js.map": "/nurtour.io/static/js/952.66ee773a.chunk.js.map",
+    "856.d02b9daa.chunk.js.map": "/nurtour.io/static/js/856.d02b9daa.chunk.js.map",
+    "592.599f76a2.chunk.js.map": "/nurtour.io/static/js/592.599f76a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9daa6c79.css",
-    "static/js/main.e4fae6b2.js"
+    "static/js/main.ff0e6156.js"
   ]
 }
