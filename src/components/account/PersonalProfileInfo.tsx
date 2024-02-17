@@ -31,7 +31,11 @@ const PersonalProfileInfo = ({profile, context}: AccountPageComponentProps) => {
             <h3 className='text'>{profile.username}</h3>
             <ImageLoader setImage={setImage} />
  
+<<<<<<< HEAD
             <button onClick={onUpdate}>Update</button>  
+=======
+            <button onClick={onUpdate}>Update</button> 
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
         </> 
     )
 }

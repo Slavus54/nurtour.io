@@ -11,6 +11,10 @@ import MapPicker from '../UI/MapPicker'
 import DataPagination from '../UI/DataPagination'
 import ImageLook from '../UI/ImageLook'
 import CloseIt from '../UI/CloseIt'
+<<<<<<< HEAD
+=======
+import LikeButton from '../UI/LikeButton'
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 import {ModernAlert} from '../UI/ModernAlert'
 import {getProfileM} from '../../graphql/pages/ProfilePageQueries'
 import {manageProfileManuscriptM} from '../../graphql/profile/ProfileQueries'
@@ -112,7 +116,11 @@ const Profile: React.FC<CollectionPropsType> = ({params: {id}}) => {
                                 <h4 className='pale'><b>{manuscript.likes}</b> likes</h4>
                             </div>
 
+<<<<<<< HEAD
                             <button onClick={onLikeManuscript}>Like</button>
+=======
+                            <LikeButton onClick={onLikeManuscript} />
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
                         </>
                     }
                 </>   

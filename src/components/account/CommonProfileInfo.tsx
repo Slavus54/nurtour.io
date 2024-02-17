@@ -44,12 +44,27 @@ const CommonProfileInfo = ({profile, context}: AccountPageComponentProps) => {
     return (
         <>
             <div className='items small'>
+<<<<<<< HEAD
                 <select value={role} onChange={e => setState({...state, role: e.target.value})}>
                     {ROLES.map(el => <option value={el}>{el}</option>)}
                 </select>
                 <select value={weekday} onChange={e => setState({...state, weekday: e.target.value})}>
                     {weekdays_titles.map(el => <option value={el}>{el}</option>)}
                 </select>
+=======
+                <div className='item'>
+                    <h4 className='pale'>Parent Role</h4>
+                    <select value={role} onChange={e => setState({...state, role: e.target.value})}>
+                        {ROLES.map(el => <option value={el}>{el}</option>)}
+                    </select>
+                </div>
+                <div className='item'>
+                    <h4 className='pale'>Studying Day</h4>
+                    <select value={weekday} onChange={e => setState({...state, weekday: e.target.value})}>
+                        {weekdays_titles.map(el => <option value={el}>{el}</option>)}
+                    </select>
+                </div>
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
             </div>
 
             <h4 className='pale'>Manifest</h4>

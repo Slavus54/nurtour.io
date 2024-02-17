@@ -56,7 +56,11 @@ const AccountPage = () => {
                     </FormPagination>
 
                     <div className='main profile'>
+<<<<<<< HEAD
                         {page !== null && <page.component profile={profile} context={context} />}                 
+=======
+                        {page !== null && <page.component profile={profile} context={context} />}             
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
                     </div>
                 </>
             }

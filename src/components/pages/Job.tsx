@@ -12,6 +12,10 @@ import ImageLoader from '../UI/ImageLoader'
 import ImageLook from '../UI/ImageLook'
 import CloseIt from '../UI/CloseIt'
 import DataPagination from '../UI/DataPagination'
+<<<<<<< HEAD
+=======
+import LikeButton from '../UI/LikeButton'
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 import JobCommonInfo from '../pieces/JobCommonInfo'
 import {ModernAlert} from '../UI/ModernAlert'
 import {getJobM, updateJobTaskM, manageJobStatusM, manageJobPhotoM} from '../../graphql/pages/JobPageQueries'
@@ -237,7 +241,11 @@ const Job: React.FC<CollectionPropsType> = ({params: {id}}) => {
                                 {photo.name === context.username ? 
                                         <button onClick={() => onManagePhoto('delete')}>Delete</button>
                                     :
+<<<<<<< HEAD
                                         <button onClick={() => onManagePhoto('like')}>Like</button>
+=======
+                                        <LikeButton onClick={() => onManagePhoto('like')} />
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
                                 }
                             </>
                     }

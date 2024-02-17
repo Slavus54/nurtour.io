@@ -13,6 +13,12 @@ import Job from '../pages/Job'
 import CreateHero from '../pages/CreateHero'
 import Heroes from '../pages/Heroes'
 import Hero from '../pages/Hero'
+<<<<<<< HEAD
+=======
+import CreateMasterpiece from '../pages/CreateMasterpiece'
+import Masterpieces from '../pages/Masterpieces'
+import Masterpiece from '../pages/Masterpiece'
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 import Profiles from '../pages/Profiles'
 import Profile from '../pages/Profile'
 
@@ -62,6 +68,16 @@ export const routes: RouteType[] = [
         isVisible: true
     },
     {
+<<<<<<< HEAD
+=======
+        title: 'Masterpieces',
+        access_value: 1,
+        url: '/masterpieces',
+        component: Masterpieces,
+        isVisible: true
+    },
+    {
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
         title: 'Profiles',
         access_value: 1,
         url: '/profiles',
@@ -134,6 +150,23 @@ export const routes: RouteType[] = [
     {
         title: '',
         access_value: 1,
+<<<<<<< HEAD
+=======
+        url: '/create-masterpiece/:id',
+        component: CreateMasterpiece,
+        isVisible: false
+    },
+    {
+        title: '',
+        access_value: 1,
+        url: '/masterpiece/:id',
+        component: Masterpiece,
+        isVisible: false
+    },
+    {
+        title: '',
+        access_value: 1,
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
         url: '/profile/:id',
         component: Profile,
         isVisible: false

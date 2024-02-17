@@ -28,7 +28,11 @@ const ProfileSecurity = ({profile, context}: AccountPageComponentProps) => {
 
     useMemo(() => {
         if (flag) {
+<<<<<<< HEAD
             let num: number = 5
+=======
+            let num: number = 10
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
             let salt: string = centum.password(percent / num)
             let length: number = salt.length
             

@@ -11,6 +11,10 @@ import ImageLoader from '../UI/ImageLoader'
 import ImageLook from '../UI/ImageLook'
 import CloseIt from '../UI/CloseIt'
 import DataPagination from '../UI/DataPagination'
+<<<<<<< HEAD
+=======
+import LikeButton from '../UI/LikeButton'
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 import {ModernAlert} from '../UI/ModernAlert'
 import {getRecipeM, updateRecipeInfoM, updateRecipeStepM, makeRecipeHealthM, manageRecipeCookingM} from '../../graphql/pages/RecipePageQueries'
 import {CollectionPropsType} from '../../types/types'
@@ -188,7 +192,11 @@ const Recipes: React.FC<CollectionPropsType> = ({params: {id}}) => {
                                 {context.username === cooking.name ?
                                         <button onClick={() => onManageCooking('delete')}>Delete</button>
                                     :
+<<<<<<< HEAD
                                         <button onClick={() => onManageCooking('like')}>Like</button>
+=======
+                                        <LikeButton onClick={() => onManageCooking('like')} />
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
                                 }
                             </>
                     }

@@ -1,16 +1,29 @@
 import React, {useState, useMemo, useContext} from 'react'
 import ReactMapGL, {Marker} from 'react-map-gl'
 import {useMutation} from '@apollo/client'
+<<<<<<< HEAD
 import {LOCATION_TYPES, LEVELS, VIEW_CONFIG, token} from '../../env/env'
 //@ts-ignore
 import Centum from 'centum.js'
 import {Context} from '../../context/WebProvider'
+=======
+import {useDispatch} from 'react-redux'
+//@ts-ignore
+import Centum from 'centum.js'
+import {LOCATION_TYPES, LEVELS, VIEW_CONFIG, token} from '../../env/env'
+import {Context} from '../../context/WebProvider'
+import {append} from '../../store/route/RouteSlice'
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 import Loading from '../UI/Loading'
 import MapPicker from '../UI/MapPicker'
 import ImageLoader from '../UI/ImageLoader'
 import ImageLook from '../UI/ImageLook'
 import CloseIt from '../UI/CloseIt'
 import DataPagination from '../UI/DataPagination'
+<<<<<<< HEAD
+=======
+import LikeButton from '../UI/LikeButton'
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 import {ModernAlert} from '../UI/ModernAlert'
 import {getTourM, updateTourRatingM, manageTourLocationM, makeTourFactM} from '../../graphql/pages/TourPageQueries'
 import {CollectionPropsType, Cords} from '../../types/types'
@@ -38,6 +51,10 @@ const Tour: React.FC<CollectionPropsType> = ({params: {id}}) => {
     })
 
     const centum = new Centum()
+<<<<<<< HEAD
+=======
+    const dispatch = useDispatch()
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 
     const {title, category, text, level, isTrue, rating} = state
 
@@ -119,6 +136,13 @@ const Tour: React.FC<CollectionPropsType> = ({params: {id}}) => {
         }
     }
 
+<<<<<<< HEAD
+=======
+    const onAppendLocation = () => {
+        dispatch(append(location))
+    }
+
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
     const onUpdateRating = () => {
         updateTourRating({
             variables: {
@@ -184,6 +208,11 @@ const Tour: React.FC<CollectionPropsType> = ({params: {id}}) => {
 
                                 <h2>{location.title} ({distance}m)</h2>
 
+<<<<<<< HEAD
+=======
+                                <button onClick={onAppendLocation} className='light-btn'>To Route</button>
+
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
                                 <div className='items small'>
                                     <h4 className='pale'>Type: {location.category}</h4>
                                     <h4 className='pale'><b>{location.likes}</b> likes</h4>
@@ -192,7 +221,11 @@ const Tour: React.FC<CollectionPropsType> = ({params: {id}}) => {
                                 {location.name === context.username ? 
                                         <button onClick={() => onManageLocation('delete')}>Delete</button>
                                     :
+<<<<<<< HEAD
                                         <button onClick={() => onManageLocation('like')}>Like</button>
+=======
+                                        <LikeButton onClick={() => onManageLocation('like')} />
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
                                 }
                             </>
                     }

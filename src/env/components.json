@@ -14,5 +14,12 @@
     {
         "title": "Hero",
         "path": "hero"
+<<<<<<< HEAD
+=======
+    },
+    {
+        "title": "Masterpiece",
+        "path": "masterpiece"
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
     }
 ]

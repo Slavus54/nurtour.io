@@ -9,6 +9,10 @@ import DataPagination from '../UI/DataPagination'
 import ImageLoader from '../UI/ImageLoader'
 import ImageLook from '../UI/ImageLook'
 import CloseIt from '../UI/CloseIt'
+<<<<<<< HEAD
+=======
+import LikeButton from '../UI/LikeButton'
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 import {ModernAlert} from '../UI/ModernAlert'
 import {getHeroM, updateHeroPhotoM, makeHeroAchievementM, manageHeroQuoteM} from '../../graphql/pages/HeroPageQueries'
 import {CollectionPropsType} from '../../types/types'
@@ -155,7 +159,11 @@ const Hero: React.FC<CollectionPropsType> = ({params: {id}}) => {
                                 {context.username === quote.name ?
                                         <button onClick={() => onManageQuote('delete')}>Delete</button>
                                     :
+<<<<<<< HEAD
                                         <button onClick={() => onManageQuote('like')}>Like</button>
+=======
+                                        <LikeButton onClick={() => onManageQuote('like')} />
+>>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
                                 }
                             </>
                     }
