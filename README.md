@@ -1,5 +1,16 @@
-<<<<<<< HEAD
-https://nurtour-io.web.app
-=======
+## Nurtour.IO
 
->>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
+### Description  
+  
+App for parents to nurture their children.  
+
+### Technologies  
+
+Frontend: *React, Redux Toolkit, TypeScript, Context API, Localstorage, wouter, shortid, jspdf*  
+Backend: *ExpressJS, MongoDB, mongoose*  
+API: *GraphQL, Apollo, Axios*  
+Unit Testing: *Jest*  
+
+### URL  
+
+*https://nurtour-io.web.app*  
