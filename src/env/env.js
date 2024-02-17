@@ -47,8 +47,6 @@ export const CENTURES = ['XVIII', 'XIX', 'XX', 'XXI']
 
 export const QUOTE_TYPES = ['Life', 'Job', 'Love']
 
-<<<<<<< HEAD
-=======
 // masterpiece
 
 export const MASTERPIECE_TYPES = ['Picture', 'Sculpture', 'Literature']
@@ -56,7 +54,6 @@ export const EPOCHES = ['Renaissance', 'Middle Ages', 'XIX']
 
 export const PICTURE_TYPES = ['Shoot', '3/4', 'Selfie']
 
->>>>>>> a71f9be (Added masterpiece component, own route of tour's locations with redux on map, small UI changes)
 // system
 
 export const token = 'pk.eyJ1Ijoic2xhdnVzNTQiLCJhIjoiY2toYTAwYzdzMWF1dzJwbnptbGRiYmJqNyJ9.HzjnJX8t13sCZuVe2PiixA'
